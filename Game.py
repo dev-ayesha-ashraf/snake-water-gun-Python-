@@ -1,4 +1,7 @@
-computer = "snake"
+import random
+computerChoice = ["snake" , "water" , "gun"]
+randomGenerate = random.choice(computerChoice)
+computer = randomGenerate
 you = input("Enter Your Choice: ")
 print(f"computer chose {computer} and you chose {you}")
 if(computer == you):
